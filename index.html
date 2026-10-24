@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For You, My Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Caveat:wght@500;700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+<body>
+<div id="gate"><div><div class="env">💌</div><h1>For <em class="her"></em></h1><p class="sub">Something I made, just for you</p><button class="btn" id="open">Tap to open 💗</button><p class="sub" style="font-size:13px">(turn your sound on 🔊)</p></div></div>
+<div id="pb"></div>
+<div id="bg"><div class="blob" data-d="40" style="width:60vmax;height:60vmax;background:#ff9fb8;left:-20vmax;top:-15vmax"></div><div class="blob" data-d="-60" style="width:50vmax;height:50vmax;background:#ffc78a;right:-18vmax;top:30vh"></div><div class="blob" data-d="30" style="width:45vmax;height:45vmax;background:#d77bff;left:20vw;bottom:-25vmax;opacity:.35"></div></div>
+<button id="mute" aria-label="Music on or off">🔊</button>
+<canvas id="heartsC"></canvas>
+
+<section id="hero">
+  <div class="tag" id="heroTag"></div>
+  <h1><span id="hey">Hey,</span><em class="her"></em></h1>
+  <p class="sub" id="heroSub"></p>
+  <div class="hint">scroll ↓</div>
+</section>
+
+<section id="mq"><div class="rot"><div class="row" id="r1"></div><div class="row o" id="r2"></div></div></section>
+
+<section id="band">
+  <div class="tag">Chapter 1</div>
+  <h2>Two threads, one <em>us</em></h2>
+  <svg viewBox="0 0 320 90"><g fill="none" stroke-width="7" stroke-linecap="round"><path class="th" d="M10 45 C60 5,110 85,160 45 S260 5,310 45" stroke="#e8456f" pathLength="1"/><path class="th" d="M10 45 C60 85,110 5,160 45 S260 85,310 45" stroke="#ffb3c6" pathLength="1"/></g><text id="bh" x="160" y="55" text-anchor="middle" font-size="28" fill="#ff8fab">♥</text></svg>
+  <p class="sub">Keep scrolling and watch us tie together.</p>
+</section>
+
+<section id="gal">
+  <div class="t"><div class="tag" style="color:#e8456f">Chapter 2</div><h2>Our little <em style="color:#e8456f">moments</em></h2></div>
+  <div id="track"></div>
+</section>
+
+<section id="count">
+  <div class="tag">Chapter 3</div>
+  <h2>I’ve been yours for</h2>
+  <div class="big" id="days">0</div>
+  <h2>days<em> and counting</em></h2>
+  <p class="sub">And I’d pick you again in every one of them.</p>
+</section>
+
+<section id="letter">
+  <div class="tag">Chapter 4 · A letter</div>
+  <p id="note"></p>
+  <h2 style="margin-top:20px;font-size:32px"><em class="him"></em></h2>
+</section>
+
+<section id="promises">
+  <div class="tag" style="color:#e8456f">Chapter 5</div>
+  <h2>My promises <em style="color:#e8456f">to you</em></h2>
+  <div id="pl"></div>
+</section>
+
+<section id="end">
+  <div class="tag">The end (never really)</div>
+  <div class="heart">♥</div>
+  <h2><span id="finalLine"></span> <em class="her"></em></h2>
+  <button class="btn" onclick="burst()">Tap for a surprise 💌</button>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
